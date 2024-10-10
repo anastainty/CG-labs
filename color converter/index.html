@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <h1>Color Converter</h1>
+            <div class="color-picker">
+                <input type="color" id="colorInput" value="#ff0000">
+            </div>
+            <div class="color-values">
+                <div class="color-model">
+                    <h2>RGB</h2>
+                    <input type="range" id="rSlider" min="0" max="255">
+                    <input type="number" id="rValue" placeholder="R" min="0" max="255">
+                    <input type="range" id="gSlider" min="0" max="255">
+                    <input type="number" id="gValue" placeholder="G" min="0" max="255">
+                    <input type="range" id="bSlider" min="0" max="255">
+                    <input type="number" id="bValue" placeholder="B" min="0" max="255">
+                </div>
+                <div class="color-model">
+                    <h2>CMYK</h2>
+                    <input type="range" id="cSlider" min="0" max="100">
+                    <input type="number" id="cValue" placeholder="C" min="0" max="100">
+                    <input type="range" id="mSlider" min="0" max="100">
+                    <input type="number" id="mValue" placeholder="M" min="0" max="100">
+                    <input type="range" id="ySlider" min="0" max="100">
+                    <input type="number" id="yValue" placeholder="Y" min="0" max="100">
+                    <input type="range" id="kSlider" min="0" max="100">
+                    <input type="number" id="kValue" placeholder="K" min="0" max="100">
+                </div>
+                <div class="color-model">
+                    <h2>HSV</h2>
+                    <input type="range" id="hSlider" min="0" max="360">
+                    <input type="number" id="hValue" placeholder="H" min="0" max="360">
+                    <input type="range" id="sSlider" min="0" max="100">
+                    <input type="number" id="sValue" placeholder="S" min="0" max="100">
+                    <input type="range" id="vSlider" min="0" max="100">
+                    <input type="number" id="vValue" placeholder="V" min="0" max="100">
+                </div>
+            </div>
+        </div>
+        <div class="color-display" id="colorDisplay"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
